@@ -2,7 +2,8 @@
   "name": "json-proto-stringify",
   "displayName": "JSON Proto Multiline Stringify",
   "description": "Stringify JSON into Proto multiline string",
-  "version": "0.0.1",
+  "repository": "github:riandy-dimas/json-proto-stringify",
+  "version": "0.0.2",
   "engines": {
     "vscode": "^1.80.0"
   },
