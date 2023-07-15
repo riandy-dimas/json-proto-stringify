@@ -1,0 +1,13 @@
+{
+  "name": "John Doe",
+  "age": 17,
+  "address": {
+    "city": "Jakarta"
+  },
+  "childrens": [
+    {
+      "name": "John Cena",
+      "isAdult": false
+    }
+  ]
+}
