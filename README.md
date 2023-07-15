@@ -4,7 +4,7 @@ Convert JSON or Javascript object into multiline stringified text for proto file
 
 ## Features
 
-![Stringify multiline proto from JSON](gif/json-js-object-stringified-proto.gif)
+![Stringify multiline proto from JSON](https://github.com/riandy-dimas/json-proto-stringify/blob/master/gif/json-js-object-stringified-proto.gif)
 
 ## Release Notes
 
