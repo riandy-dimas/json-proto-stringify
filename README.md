@@ -14,7 +14,7 @@ Initial release
 
 ### 0.0.2
 
-- Fix: showing error when failed to parse text
-- Fix: skip parsing when failed instead of replacing a blank object
+- Fix: show error when failed to parse text
+- Fix: skip parsing when failed instead of replacing the text with blank object
 
 ---
