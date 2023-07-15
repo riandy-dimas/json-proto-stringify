@@ -1,4 +1,4 @@
-import { getSelectedText, replaceSelectedText, showInformation } from "./common";
+import { getSelectedText, replaceSelectedText, showError, showInformation } from "./common";
 
 export function stringifySelected() {
   const selected = getSelectedText();
@@ -12,7 +12,7 @@ export function stringifySelected() {
     const parsed = transform(selected);
     replaceSelectedText(parsed);
   } catch (err) {
-    showInformation('Failed to stringify input text');
+    showError(`Failed to stringify input text: ${err}`);
   }
 }
 
@@ -30,8 +30,9 @@ function transform (str: string) {
   var parsedJsonString = {};
   try {
     eval(`parsedJsonString = ${JSON.parse(stringifyJsonString(str))}`);
-  } catch (e) {
-    console.error(e);
+  } catch (err) {
+    showError(`Failed to stringify input text: ${err}`);
+    return str;
   }
   var jsonString = JSON.stringify(parsedJsonString, null, '\t');
   return splitToLines(jsonString);
