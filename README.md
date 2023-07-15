@@ -12,4 +12,9 @@ Convert JSON or Javascript object into multiline stringified text for proto file
 
 Initial release
 
+### 0.0.2
+
+- Fix: showing error when failed to parse text
+- Fix: skip parsing when failed instead of replacing a blank object
+
 ---
